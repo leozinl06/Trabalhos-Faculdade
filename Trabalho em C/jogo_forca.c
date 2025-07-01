@@ -56,7 +56,7 @@ int main() {
 
         printf("Palavra: %s\n", palavraAdivinhada);
         printf("Vidas restantes: %d\n", vidas);
-        printf("Letras já usadas: ");
+        printf("Letras ja usadas: ");
         for (int i = 0; i < usadasIndex; i++) {
             printf("%c ", letrasUsadas[i]);
         }
@@ -76,7 +76,7 @@ int main() {
             }
         }
         if (jaUsada) {
-            printf("Você já usou essa letra. Tente outra.\n");
+            printf("Você ja usou essa letra. Tente outra.\n");
             continue;
         }
 
@@ -98,7 +98,7 @@ int main() {
 
         // Verifica se o jogador ganhou
         if (strcmp(palavraAdivinhada, palavraSecreta) == 0) {
-            printf("Parabéns! Você acertou a palavra: %s\n", palavraSecreta);
+            printf("Parabens! Voce acertou a palavra: %s\n", palavraSecreta);
             break;
         }
     }
