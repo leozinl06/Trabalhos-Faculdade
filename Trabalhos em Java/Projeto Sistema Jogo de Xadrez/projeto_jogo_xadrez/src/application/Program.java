@@ -44,7 +44,11 @@ public class Program {
 				
 				if (ch.getPromoted() != null) {
 					System.out.print("Enter piece for promotion (B/N/R/Q): ");
-					String type = sc.next();
+					String type = sc.next().toUpperCase();
+					while (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
+						System.out.print("Invalid value! Enter piece for promotion (B/N/R/Q): ");
+						type = sc.next().toUpperCase();
+					}
 					ch.replacePromotedPiece(type);
 				}
 			} 
